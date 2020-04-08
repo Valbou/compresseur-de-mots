@@ -55,7 +55,7 @@ def comptage_noeuds(mots):
 def script(texte):
 	liste = texte_vers_mots(texte)
 	nbr_noeuds = comptage_noeuds(liste)
-	print("### Bench Python ArbreBinaire ###")
+	print("### Bench Python Arbre ###")
 	print("Texte : {} caractères, {} mots, {} noeuds".format(len(texte), len(liste), nbr_noeuds))
 	return nbr_noeuds
 
