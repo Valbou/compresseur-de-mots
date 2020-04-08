@@ -19,6 +19,7 @@ Le fichier texte.txt est le fichier texte utilisé pour le benchmark (Lorem Ipsu
 
 Version Python 3.6.9 : 
   - 48ms à 52ms de temps d'exécution
-Version Rust 1.40 : 
+  
+  Version Rust 1.40 : 
   - 30ms à 35ms (cargo run)
   - 18ms à 25ms (cargo build --release)
