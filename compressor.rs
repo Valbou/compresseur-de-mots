@@ -92,7 +92,7 @@ fn script(texte: String) -> usize {
 	let liste_mots = texte_vers_mots(&texte[..]);
 	let taille = liste_mots.len();
 	let nbr_noeuds = comptage_noeuds(liste_mots);
-	println!("### Bench Rust ArbreBinaire ###");
+	println!("### Bench Rust Arbre ###");
 	println!("Texte : {} caractères, {} mots, {} noeuds", texte.len(), taille, nbr_noeuds);
 
 	nbr_noeuds
