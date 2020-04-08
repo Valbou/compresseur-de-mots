@@ -107,7 +107,7 @@ fn main() -> io::Result<()> {
 	let mut fichier = File::open(chemin)?;
 	let mut texte = String::new();
 
-    fichier.read_to_string(&mut texte)?;
+    	fichier.read_to_string(&mut texte)?;
 	script(texte);
 
 	println!("Temps : {:.2}ms", (duree.elapsed().subsec_nanos() as f64) / 1000000f64);
