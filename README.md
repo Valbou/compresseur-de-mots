@@ -18,9 +18,9 @@ La version Rust n'a été crée que dans le but d'évaluer grossièrement la dif
 Les deux codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
 Le fichier texte.txt est le fichier texte utilisé pour le benchmark (Lorem Ipsum).
 
-# Version Python 3.6.9 : 
+### Version Python 3.6.9 : 
   - 48ms à 52ms de temps d'exécution
   
-# Version Rust 1.40 : 
+### Version Rust 1.40 : 
   - 30ms à 35ms (cargo run)
   - 18ms à 25ms (cargo build --release)
