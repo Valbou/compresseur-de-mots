@@ -19,7 +19,7 @@ Les deux codes ont été exécutés sur la même machine (PC portable Ubuntu 18.
 Le fichier texte.txt est le fichier texte utilisé pour le benchmark (Lorem Ipsum).
 
 ### Version Python 2.7.17 : 
-  - 100ms à 140ms de temps d'exécution
+  - 99ms à 105ms de temps d'exécution
   
 ### Version Python 3.6.9 : 
   - 48ms à 52ms de temps d'exécution (venv)
