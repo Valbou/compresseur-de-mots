@@ -2,7 +2,7 @@
 
 Aucune dépendance nécessaire.
 
-**Version Python** : Interprété avec Python 2.7.17 et 3.6.9.
+**Version CPython** : Interprété avec Python 2.7.17 et 3.6.9. Testé avec PyPy 2.7
 
 **Version Rust** : Compilé avec Rust 1.40.
 
@@ -29,13 +29,13 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
 
 **NB** : Certains langages ne prennent pas en charge nativement l'UTF-8 ce qui ajoute un biais au code testé générant des noeuds supplémentaires pour les accents notamment.
 
-### Version Python 2.7.17 : 
+### Version CPython 2.7.17 : 
   - environ 22s de temps d'exécution
 
 ### Version PyPy 2.7 :
   - environ 6.4s
   
-### Version Python 3.6.9 : 
+### Version CPython 3.6.9 : 
   - environ 10s
   
 ### Version Rust 1.40 : 
