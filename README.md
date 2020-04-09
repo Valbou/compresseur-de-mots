@@ -22,17 +22,21 @@ Le fichier dico_fr.txt est un fichier reformaté de : http://www.pallier.org/lis
 ## Benchmark Python vs Rust vs PHP :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
 Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
-Le fichier texte.txt est le fichier texte utilisé pour le benchmark (Lorem Ipsum).
+Le fichier dico_fr.txt est le fichier texte utilisé pour le benchmark.
+Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent varier d'une exécution à l'autre, et différer sur un autre système/configuration.
 
 ### Version Python 2.7.17 : 
-  - 99ms à 105ms de temps d'exécution
+  - environ 22s de temps d'exécution
+
+### Version PyPy 2.7 :
+  - environ 6.4s
   
 ### Version Python 3.6.9 : 
-  - 48ms à 52ms de temps d'exécution (venv)
+  - environ 10s
   
 ### Version Rust 1.40 : 
-  - 30ms à 35ms (cargo run)
-  - 18ms à 25ms (cargo build --release)
+  - 0.5s (cargo run)
+  - 0.2s (cargo build --release)
 
 ### Version PHP 7.2.4 :
-  - 25 à 31ms (php-cli)
+  - environ 10s (php-cli)
