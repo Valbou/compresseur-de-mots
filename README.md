@@ -16,6 +16,7 @@ Le script indique le nombre de caractères reçus, et le nombre de noeuds créé
 Donnant ainsi une indication sur la compression du texte fourni.
 
 Le fichier texte.txt est un texte Lorem Ipsum généré par : https://fr.lipsum.com/
+
 Le fichier dico_fr.txt est un fichier reformaté de : http://www.pallier.org/liste-de-mots-francais.html
 
 ## Benchmark Python vs Rust vs PHP :
