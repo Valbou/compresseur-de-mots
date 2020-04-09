@@ -39,8 +39,8 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
   - environ 10s
   
 ### Version Rust 1.40 : 
-  - 0.5s (cargo run)
-  - 0.2s (cargo build --release)
+  - 4.4s (cargo run)
+  - 3.2s (cargo build --release)
 
 ### Version PHP 7.2.4 :
   - environ 10s (php-cli)
