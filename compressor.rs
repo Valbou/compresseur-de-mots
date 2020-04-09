@@ -1,5 +1,5 @@
 use std::str::FromStr;
-use std::time::Instant;
+use std::time::{Duration, Instant};
 use std::io;
 use std::io::prelude::*;
 use std::fs::File;
@@ -99,18 +99,18 @@ fn script(texte: String) -> usize {
 }
 
 fn main() -> io::Result<()> {
-    let duree = Instant::now();
+    	let debut = Instant::now();
 
-	let repo = "/home/user/";
+	let repo = "/home/valbou/Developpement/Benchmark/Arbre/";
 	let chemin = &format!("{}{}", repo, "dico_fr.txt")[..];
-
 	let mut fichier = File::open(chemin)?;
 	let mut texte = String::new();
 
     	fichier.read_to_string(&mut texte)?;
 	script(texte);
 
-	println!("Temps : {:.2}ms", (duree.elapsed().subsec_nanos() as f64) / 1000000f64);
+	let fin = Instant::now();
+	println!("Temps : {:?}ms", (fin - debut).as_millis());
 
 	Ok(())
 }
