@@ -85,7 +85,7 @@ REPO = "/home/user/"
 if __name__ == "__main__":
 	debut = time()
 
-	with open(REPO+"texte.txt", mode="r") as fichier:
+	with open(REPO+"dico_fr.txt", mode="r") as fichier:
 		script(fichier.read())
 
 	fin = time()
