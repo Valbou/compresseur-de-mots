@@ -16,8 +16,8 @@ Le script indique le nombre de caractères reçus, et le nombre de noeuds créé
 Donnant ainsi une indication sur la compression du texte fourni.
 
 ## Benchmark Python vs Rust vs PHP :
-La version Rust n'a été crée que dans le but d'évaluer grossièrement la différence de performances entre les deux langages.
-Les deux codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
+Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
+Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
 Le fichier texte.txt est le fichier texte utilisé pour le benchmark (Lorem Ipsum).
 
 ### Version Python 2.7.17 : 
