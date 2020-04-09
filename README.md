@@ -1,4 +1,4 @@
-# compresseur-de-mots
+# Compresseur de Dictionnaire de Mots
 
 Aucune dépendance nécessaire.
 
