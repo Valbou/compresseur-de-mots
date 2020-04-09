@@ -21,7 +21,7 @@ Le fichier texte.txt est un texte Lorem Ipsum généré par : https://fr.lipsum.
 
 Le fichier dico_fr.txt est un fichier reformaté de : http://www.pallier.org/liste-de-mots-francais.html
 
-## Benchmark Python vs Rust vs PHP vs C++ :
+## Benchmark Python2 vs PyPy vs Python3 vs Rust vs PHP vs C++ :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
 Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
 Le fichier dico_fr.txt est le fichier texte utilisé pour le benchmark.
