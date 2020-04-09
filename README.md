@@ -46,4 +46,4 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
   - environ 10s (php-cli)
 
 ### Version C++ :
-  - environ 3.7s (g++ -o)
+  - environ 4.5s (g++ -o)
