@@ -102,7 +102,7 @@ fn main() -> io::Result<()> {
     let duree = Instant::now();
 
 	let repo = "/home/user/";
-	let chemin = &format!("{}{}", repo, "texte.txt")[..];
+	let chemin = &format!("{}{}", repo, "dico_fr.txt")[..];
 
 	let mut fichier = File::open(chemin)?;
 	let mut texte = String::new();
