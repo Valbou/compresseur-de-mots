@@ -2,14 +2,6 @@
 
 Aucune dépendance nécessaire.
 
-**Version CPython** : Interprété avec Python 2.7.17 et 3.6.9. Testé avec PyPy 2.7
-
-**Version Rust** : Compilé avec Rust 1.40.
-
-**Version PHP** : Interprété avec PHP 7.2.24
-
-**Version C++** : Compilé avec G++ 7.5.0
-
 Prend un fichier texte sans sauts de ligne en entrée pour construire un arbre/tas optimisé.
 C'est une base simple, mais performante pour un système d'auto complétion.
 Cette version n'étant réalisée qu'à titre ludique, elle n'a pas vocation à être prête à l'emploi en prodution.
@@ -21,7 +13,17 @@ Le fichier texte.txt est un texte Lorem Ipsum généré par : https://fr.lipsum.
 
 Le fichier dico_fr.txt est un fichier reformaté de : http://www.pallier.org/liste-de-mots-francais.html
 
-## Benchmark Python2 vs PyPy vs Python3 vs Rust vs PHP vs C++ :
+**Version CPython** : Interprété avec Python 2.7.17 et 3.6.9. Testé avec PyPy 2.7
+
+**Version Rust** : Compilé avec Rust 1.40.
+
+**Version PHP** : Interprété avec PHP 7.2.24
+
+**Version C++** : Compilé avec G++ 7.5.0
+
+**Version JS** : Interprété avec Node 12.16.1
+
+## Benchmark Python2 vs PyPy vs Python3 vs Rust vs PHP vs C++ vs JS :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
 Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
 Le fichier dico_fr.txt est le fichier texte utilisé pour le benchmark.
@@ -47,3 +49,6 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
 
 ### Version C++ :
   - environ 4.5s (g++ -o)
+
+### Version Node JS 12.16.1 :
+  - environ 9s (node)
