@@ -39,7 +39,10 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
   
 ### Version CPython 3.6.9 : 
   - environ 10s
-  
+
+### Version PyPy 3.6 :
+  - environ 6.5s
+
 ### Version Rust 1.40 : 
   - environ 4.5s (cargo run)
   - environ 3.2s (cargo build --release)
