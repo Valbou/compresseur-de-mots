@@ -22,8 +22,8 @@ class Noeud {
         }
 
         bool ajoutNoeud(string mot) {
-            mot = mot.substr(1);
             if(mot.length() > 1) {
+		mot = mot.substr(1);
                 int indice = this->noeudEnfantExiste(mot);
 
                 if(indice >= 0) {
