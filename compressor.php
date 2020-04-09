@@ -67,7 +67,7 @@
     $debut = microtime(TRUE);
 
     $repo = "/home/user/";
-    $texte = file_get_contents($repo."texte.txt");
+    $texte = file_get_contents($repo."dico_fr.txt");
     script($texte);
 
     $fin = microtime(TRUE);
