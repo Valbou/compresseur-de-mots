@@ -13,6 +13,8 @@ Le fichier texte.txt est un texte Lorem Ipsum généré par : https://fr.lipsum.
 
 Le fichier dico_fr.txt est un fichier reformaté de : http://www.pallier.org/liste-de-mots-francais.html
 
+Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/english-words
+
 **Version CPython** : Interprété avec Python 2.7.17 et 3.6.9. Testé avec PyPy 2.7
 
 **Version Rust** : Compilé avec Rust 1.40.
@@ -29,7 +31,7 @@ Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, S
 Le fichier dico_fr.txt est le fichier texte utilisé pour le benchmark.
 Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent varier d'une exécution à l'autre, et différer sur un autre système/configuration. Enfin, le code n'est probablement pas au mieux adapté/optimisé à chaque langage.
 
-**NB** : Certains langages ne prennent pas en charge nativement l'UTF-8 ce qui ajoute un biais au code testé générant des noeuds supplémentaires pour les accents notamment.
+**NB** : Certains langages ne prennent pas en charge nativement ls caractères mutlibites UTF-8 ce qui ajoute un biais au code testé générant des noeuds supplémentaires pour les accents notamment (C++) ou tronquent les chaines diminuant le nombre de noeuds (Rust).
 
 ### Version CPython 2.7.17 : 
   - environ 22s de temps d'exécution
