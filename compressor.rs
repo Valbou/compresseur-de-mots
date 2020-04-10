@@ -102,7 +102,7 @@ fn main() -> io::Result<()> {
     	let debut = Instant::now();
 
 	let repo = "/home/valbou/Developpement/Benchmark/Arbre/";
-	let chemin = &format!("{}{}", repo, "dico_fr.txt")[..];
+	let chemin = &format!("{}{}", repo, "dico_en.txt")[..];
 	let mut fichier = File::open(chemin)?;
 	let mut texte = String::new();
 
