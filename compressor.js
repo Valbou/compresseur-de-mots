@@ -72,7 +72,7 @@ function script(texte) {
 function main () {
   let debut = Date.now()
   let repo = "/home/user/"
-  let texte = fs.readFileSync(repo+"dico_fr.txt", 'utf8')
+  let texte = fs.readFileSync(repo+"dico_en.txt", 'utf8')
   script(texte)
   let fin = Date.now()
   console.log("Temps : "+ new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 2}).format(fin-debut) +"s")
