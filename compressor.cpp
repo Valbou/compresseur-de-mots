@@ -93,7 +93,7 @@ int main() {
 
 	string repo = "/home/user/";
     fstream fichier;
-    fichier.open(repo+"dico_fr.txt", ios::in);
+    fichier.open(repo+"dico_en.txt", ios::in);
     string texte;
     if(fichier.is_open()) {
         getline(fichier, texte);
