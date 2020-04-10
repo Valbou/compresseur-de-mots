@@ -6,8 +6,11 @@ Prend un fichier texte sans sauts de ligne en entrée pour construire un arbre/t
 C'est une base simple, mais performante pour un système d'auto complétion.
 Cette version n'étant réalisée qu'à titre ludique, elle n'a pas vocation à être prête à l'emploi en prodution.
 
-Le script indique le nombre de caractères reçus, et le nombre de noeuds créés.
+Le script indique le nombre de caractères reçus, de mots, et le nombre de noeuds créés.
 Donnant ainsi une indication sur la compression du texte fourni.
+Il chronomètre également le temps d'exécution.
+
+La plupart des listes de mots utilisant le saut de ligne comme séparateur, le script preformatter_txt.py converti les sauts de ligne en espaces. Ainsi, les listes sont traités comme un paragraphe de texte lambda.
 
 Le fichier texte.txt est un texte Lorem Ipsum généré par : https://fr.lipsum.com/
 
