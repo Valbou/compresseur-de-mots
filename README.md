@@ -28,32 +28,29 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 ## Benchmark Python2 vs PyPy vs Python3 vs Rust vs PHP vs C++ vs JS :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
 Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
-Le fichier dico_fr.txt est le fichier texte utilisé pour le benchmark.
+Le fichier dico_en.txt est le fichier texte utilisé pour le benchmark.
 Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent varier d'une exécution à l'autre, et différer sur un autre système/configuration. Enfin, le code n'est probablement pas au mieux adapté/optimisé à chaque langage.
 
-**NB** : Certains langages ne prennent pas en charge nativement ls caractères mutlibites UTF-8 ce qui ajoute un biais au code testé générant des noeuds supplémentaires pour les accents notamment (C++) ou tronquent les chaines diminuant le nombre de noeuds (Rust).
+**NB** : Les caractères composés en UTF-8 posent des difficultés sur les slices notamment en C++ et en Rust. C'est le cas pour les caractères accentués notamment. C++ crée un noeud pour l'accent. Rust n'est pas en mesure de traiter un accent seul et ne traite donc pas le reste du mot. Testé avec le fichier dico_fr.txt.
 
 ### Version CPython 2.7.17 : 
-  - environ 22s de temps d'exécution
+  - 50.187s de temps d'exécution
 
 ### Version PyPy 2.7 :
-  - environ 6.4s
-  
-### Version CPython 3.6.9 : 
-  - environ 10s
+  - 12.602s
 
 ### Version PyPy 3.6 :
-  - environ 6.5s
+  - 18.504s
 
 ### Version Rust 1.40 : 
-  - environ 4.5s (cargo run)
-  - environ 3.2s (cargo build --release)
+  - 10.836s (cargo run)
+  - 7.881s (cargo build --release)
 
 ### Version PHP 7.2.4 :
-  - environ 10s (php-cli)
+  - 26.722s (php-cli)
 
 ### Version C++ :
-  - environ 4.5s (g++ -o)
+  - 8.903s (g++ -o)
 
 ### Version Node JS 12.16.1 :
-  - environ 9s (node)
+  - 17.729s (node)
