@@ -38,12 +38,14 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
 
 ### Version CPython 2.7.17 : 
   - 50.187s de temps d'exécution
+  - 45.365s (gc.disable)
 
 ### Version PyPy 2.7 :
   - 12.602s
 
 ### Version CPython 3.6 :
   - 18.504s
+  - 15.802s (gc.disable)
 
 ### Version Rust 1.40 : 
   - 10.836s (cargo run)
