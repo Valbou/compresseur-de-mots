@@ -84,9 +84,11 @@ REPO = "/home/user/"
 
 if __name__ == "__main__":
 	debut = time()
+	# gc.disable()
 
 	with open(REPO+"dico_en.txt", mode="r") as fichier:
 		script(fichier.read())
 
+	# gc.enable()
 	fin = time()
 	print("Temps : {:.2f}ms".format((fin-debut)*1000))
