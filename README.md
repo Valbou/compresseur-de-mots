@@ -62,5 +62,5 @@ Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent
 
 
 Sans surprise les langages compilés dominent. Cependant je suis étonné de voir Python 2.7 aussi lent, il est souvent évoqué comme plus rapide que Python3 sur la toile. De même PHP souffre beaucoup ici (+44% par rappor à Python3). Sur de petits scripts, PHP est souvent plus rapide que Python3.
-La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3). Node est sensiblement plus performant que Python3 mais moins performant que PyPy (+40% par rapport à Pypy).
+La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3 avec gc, +10% en optimisant le gc). Node est sensiblement plus performant que Python3 mais moins performant que PyPy (+40% par rapport à Pypy).
 Enfin Rust brille particulièrement face au C++ (-11%).
