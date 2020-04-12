@@ -40,6 +40,7 @@ Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécu
 
 ### Version PHP 7.2.4 :
   - 26.722s (php-cli)
+  - 10.246s (gc_disable)
 
 ### Version CPython 2.7.17 : 
   - 50.187s de temps d'exécution
@@ -65,6 +66,6 @@ Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécu
 
 Sans surprise les langages compilés dominent. Rust brille particulièrement face au C++ (-11%).
 
-Je suis surpris de voir Python 2.7 aussi lent, il est souvent évoqué comme plus rapide que Python3 sur la toile. De même PHP souffre beaucoup ici (+44% par rappor à Python3). Sur de petits scripts, PHP est souvent plus rapide que Python3.
+Je suis surpris de voir Python 2.7 aussi lent, il est souvent évoqué comme plus rapide que Python3 sur la toile. De même PHP souffre beaucoup ici (+44% par rappor à Python3). On appréciera les performances de PHP sans garbage collector (le coût du GC de PHP est impressionnant ici : 60% du temps d'exécution).
 
 La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3 avec gc, et +10% par rapport à Python 3 en optimisant le gc). Node est beaucoup moins performant que PyPy (+40% par rapport à Pypy).
