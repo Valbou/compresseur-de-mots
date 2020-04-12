@@ -69,3 +69,5 @@ Sans surprise les langages compilés dominent. Rust brille particulièrement fac
 Je suis surpris de voir Python 2.7 aussi lent, il est souvent évoqué comme plus rapide que Python3 sur la toile. De même PHP souffre beaucoup ici (+44% par rappor à Python3). On appréciera les performances de PHP sans garbage collector (le coût du GC de PHP est impressionnant ici : 60% du temps d'exécution).
 
 La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3 avec gc, et +10% par rapport à Python 3 en optimisant le gc). Node est beaucoup moins performant que PyPy (+40% par rapport à Pypy).
+
+**Attention, la désactivation du GC, peut entrainer des fuite de mémoire**
