@@ -70,4 +70,4 @@ Je suis surpris de voir Python 2.7 aussi lent, il est souvent évoqué comme plu
 
 La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3 avec gc, et +10% par rapport à Python 3 en optimisant le gc). Node est beaucoup moins performant que PyPy (+40% par rapport à Pypy).
 
-**Attention, la désactivation du GC, peut entrainer des fuite de mémoire**
+**Attention, la désactivation du GC, peut entrainer des fuites de mémoire**
