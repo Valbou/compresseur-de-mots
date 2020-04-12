@@ -65,11 +65,13 @@
     }
 
     $debut = microtime(TRUE);
+    // gc_disable();
 
     $repo = "/home/user/";
     $texte = file_get_contents($repo."dico_en.txt");
     script($texte);
 
+    // gc_enable();
     $fin = microtime(TRUE);
     $delai = $fin - $debut;
     echo "Temps : ".number_format($delai*1000, 2)."ms\n";
