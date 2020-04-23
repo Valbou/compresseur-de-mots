@@ -34,7 +34,7 @@ Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, S
 Le fichier dico_en.txt est le fichier texte utilisé pour le benchmark.
 Les temps d'exécution fournis sont donné à titre de comparaison, mais peuvent varier d'une exécution à l'autre, et différer sur un autre système/configuration. Enfin, le code n'est probablement pas au mieux adapté/optimisé à chaque langage.
 
-**NB** : Les caractères composés en UTF-8 posent des difficultés sur les slices notamment en C++ et en Rust. C'est le cas pour les caractères accentués notamment. C++ crée un noeud pour l'accent. Rust n'est pas en mesure de traiter un accent seul et ne traite donc pas le reste du mot. Des adaptations du code supplémentaires sont nécessaires. Testé avec le fichier dico_fr.txt.
+**NB** : Les caractères composés en UTF-8 biaisent un peu les résultats notamment en C++. C++ crée un noeud supplémentaire pour l'accent.
 
 Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécution plus court. (moins c'est mieux)
 
