@@ -11,6 +11,15 @@ fn premier_caractere(mot: &str) -> char {
 	}
 }
 
+fn sliceur(mot: &str) -> usize {
+	if mot.len() > 1 {
+		let c = mot.chars().next().unwrap();
+		return c.len_utf8();
+	}
+
+	return 1usize
+}
+
 struct Noeud {
 	val: char,
 	enfants: Vec<Noeud>
@@ -30,7 +39,8 @@ impl Noeud {
 
 	fn ajout_noeud(&mut self, mot: &str) -> bool {
 		if 1 < mot.len() {
-			let mot2 = match mot.get(1..) {
+			let i: usize = sliceur(mot);
+			let mot2 = match mot.get(i..) {
 				Some(v) => v,
 				None => "",
 			};
