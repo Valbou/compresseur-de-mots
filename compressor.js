@@ -1,7 +1,5 @@
 var fs = require('fs');
 
-// node -e 'require("./arbre").init()'
-
 class Noeud {
   constructor(mot) {
     this.val = mot[0];
