@@ -26,7 +26,7 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 
 **Version C++** : Compilé avec G++ 7.5.0
 
-**Version JS** : Interprété avec Node 12.16.1
+**Version JS** : Interprété avec Node 12.16.1 et Deno 1.0
 
 ## Benchmark PHP vs Python2 vs PyPy vs Python3 vs Node JS vs C++ vs Rust :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
@@ -56,6 +56,9 @@ Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécu
 ### Version Node JS 12.16.1 :
   - 17.729s (node)
 
+### Version Deno 1.0 :
+  - 11.035s (deno run --unstable --allow-read)
+
 ### Version C++ :
   - 8.903s (g++ -o)
 
@@ -69,5 +72,6 @@ Sans surprise les langages compilés dominent. Rust brille particulièrement fac
 Je suis surpris de voir Python 2.7 aussi lent, il est souvent évoqué comme plus rapide que Python3 sur la toile. De même PHP souffre beaucoup ici (+44% par rappor à Python3). On appréciera les performances de PHP sans garbage collector (le coût du GC de PHP est impressionnant ici : 60% du temps d'exécution).
 
 La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3 avec gc, et +10% par rapport à Python 3 en optimisant le gc). Node est beaucoup moins performant que PyPy (+40% par rapport à Pypy).
+Deno offre quant à lui des performances prometteuses avec JS !
 
 **Attention, la désactivation du GC, peut entrainer des fuites de mémoire**
