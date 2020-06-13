@@ -28,7 +28,7 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 
 **Version JS** : Interprété avec Node 12.16.1 et Deno 1.0
 
-## Benchmark PHP vs Python2 vs PyPy vs Python3 vs Node JS vs C++ vs Rust :
+## Benchmark PHP vs Python2 vs PyPy vs Python3 vs Node JS vs Deno vs C++ vs Rust :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
 Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
 Le fichier dico_en.txt est le fichier texte utilisé pour le benchmark.
@@ -37,17 +37,15 @@ Les temps d'exécution fournis sont donnés à titre de comparaison, mais peuven
 **NB** : Les caractères composés en UTF-8 biaisent un peu les résultats notamment en C++. C++ crée un noeud supplémentaire pour l'accent.
 
 Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécution plus court. (moins c'est mieux)
-
-### Version PHP 7.2.4 :
-  - 26.722s (php-cli)
-  - 10.246s (gc_disable)
+Les tests sont classés du plus lent au plus rapide.
 
 ### Version CPython 2.7.17 : 
   - 50.187s de temps d'exécution
   - 45.365s (gc.disable)
 
-### Version PyPy 2.7 :
-  - 12.602s
+### Version PHP 7.2.4 :
+  - 26.722s (php-cli)
+  - 10.246s (gc_disable)
 
 ### Version CPython 3.6 :
   - 18.504s
@@ -55,6 +53,9 @@ Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécu
 
 ### Version Node JS 12.16.1 :
   - 17.729s (node)
+
+### Version PyPy 2.7 :
+  - 12.602s
 
 ### Version Deno 1.0 :
   - 11.035s (deno run --unstable --allow-read)
@@ -66,12 +67,6 @@ Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécu
   - 10.836s (cargo run)
   - 7.881s (cargo build --release)
 
-
-Sans surprise les langages compilés dominent. Rust brille particulièrement face au C++ (-11%).
-
-Je suis surpris de voir Python 2.7 aussi lent, il est souvent évoqué comme plus rapide que Python3 sur la toile. De même PHP souffre beaucoup ici (+44% par rappor à Python3). On appréciera les performances de PHP sans garbage collector (le coût du GC de PHP est impressionnant ici : 60% du temps d'exécution).
-
-La performance tant vantée de Node sur la toile ne ressort pas franchement sur ce test (-4% par rapport à Python3 avec gc, et +10% par rapport à Python 3 en optimisant le gc). Node est beaucoup moins performant que PyPy (+40% par rapport à Pypy).
-Deno offre quant à lui des performances prometteuses avec JS !
+Je vous laisse juger des performances. Il est important de noter toutefois que ces tests ne sont pas représentatifs de cas d'usage courants.
 
 **Attention, la désactivation du GC, peut entrainer des fuites de mémoire**
