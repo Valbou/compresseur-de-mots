@@ -30,7 +30,7 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 
 ## Benchmark PHP vs Python2 vs PyPy vs Python3 vs Node JS vs Deno vs C++ vs Rust :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
-Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD, i7 8e génération, 8Go ram).
+Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, SSD Ext4, i7 8e génération, 8Go ram).
 Le fichier dico_en.txt est le fichier texte utilisé pour le benchmark.
 Les temps d'exécution fournis sont donnés à titre de comparaison, mais peuvent varier d'une exécution à l'autre, et différer sur un autre système/configuration. Enfin, le code n'est probablement pas au mieux adapté/optimisé à chaque langage.
 
