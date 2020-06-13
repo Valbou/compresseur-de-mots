@@ -34,8 +34,6 @@ Les codes ont été exécutés sur la même machine (PC portable Ubuntu 18.04, S
 Le fichier dico_en.txt est le fichier texte utilisé pour le benchmark.
 Les temps d'exécution fournis sont donnés à titre de comparaison, mais peuvent varier d'une exécution à l'autre, et différer sur un autre système/configuration. Enfin, le code n'est probablement pas au mieux adapté/optimisé à chaque langage.
 
-**NB** : Les caractères composés en UTF-8 biaisent un peu les résultats notamment en C++. C++ crée un noeud supplémentaire pour l'accent.
-
 Le temps d'exécution est en seconde. Les plus performants ont un temps d'exécution plus court. (moins c'est mieux)
 Les tests sont classés du plus lent au plus rapide.
 
