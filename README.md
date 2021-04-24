@@ -41,16 +41,6 @@ Les tests sont classés du plus lent au plus rapide.
   - 50.187s de temps d'exécution
   - 45.365s (gc.disable)
 
-### Version PHP :
-  - v7.2.4 :
-    - 26.722s (php-cli)
-    - 10.246s (gc_disable)
-  - v7.4.3 :
-    - 10.053s (php-cli)
-    - 8.869s (gc_disable)
-  - v8.0.3 :
-    - 8.109s (php-cgi) nécessite : ini_set('memory_limit','1024M'); **fatal error avec 512Mo**
-
 ### Nuitka 0.6.14.4 / CPython 3.8.5 :
   - 18.282s
   - 14.759s (gc.disable)
@@ -77,6 +67,17 @@ Les tests sont classés du plus lent au plus rapide.
     - 12.602s
   - v3.6
     - 10.411s
+
+### Version PHP :
+  - v7.2.4 :
+    - 26.722s (php-cli)
+    - 10.246s (gc_disable)
+  - v7.4.3 :
+    - 10.053s (php-cli)
+    - 8.869s (gc_disable)
+  - v8.0.3 (nécessite plus de 512Mo : ini_set('memory_limit','1024M');) :
+    - 9.670s (php-cgi)
+    - 8.109s (gc_disable)
 
 ### Version C++ :
   - g++ v8.2 :
