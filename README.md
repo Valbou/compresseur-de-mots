@@ -45,10 +45,6 @@ Les tests sont classés du plus lent au plus rapide.
   - 26.722s (php-cli)
   - 10.246s (gc_disable)
 
-### Version CPython 3.6.9 :
-  - 18.504s
-  - 15.802s (gc.disable)
-
 ### Nuitka 0.6.14.4 / CPython 3.8.5 :
   - 18.282s
   - 14.759s (gc.disable)
@@ -56,29 +52,30 @@ Les tests sont classés du plus lent au plus rapide.
 ### Version Node JS 12.16.1 :
   - 17.729s (node)
 
-### Version CPython 3.8.5 :
-  - 16.889s
-  - 13.237s (gc.disable)
+### Version CPython 3 :
+  - 18.504s v3.6.9
+  - 15.802s (gc.disable) v3.6.9
 
-### Version PyPy 2.7 :
-  - 12.602s
+  - 16.889s v3.8.5
+  - 13.237s (gc.disable) v3.8.5
 
 ### Version Deno 1.0 et 1.8.3 :
   - 11.035s (deno run --unstable --allow-read)
 
 ### Version PyPy 3.6 :
-  - 10.411s
+  - 12.602s v2.7
+  - 10.411s v3.6
 
 ### Version C++ :
-  - 8.903s (g++ -o)
+  - 8.903s (g++ -o) g++ v8.2
+  - 7.742s (g++ -o) g++ v9.3.0
 
 ### Version Rust 1.40 : 
-  - 10.836s (cargo run)
-  - 7.881s (cargo build --release)
+  - 10.836s (cargo run) v1.40
+  - 7.881s (cargo build --release) v1.40
 
-### Version Rust 1.46 : 
-  - 9.568s (cargo run)
-  - 6.440s (cargo build --release)
+  - 9.568s (cargo run) v1.46
+  - 6.440s (cargo build --release) v1.46
 
 Je vous laisse juger des performances. Il est important de noter toutefois que ces tests ne sont pas représentatifs de cas d'usage courants.
 
