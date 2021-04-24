@@ -52,6 +52,10 @@ Les tests sont classés du plus lent au plus rapide.
 ### Version Node JS 12.16.1 :
   - 17.729s (node)
 
+### Version CPython 3.8 :
+  - 16.998s
+  - 13.237s (gc.disable)
+
 ### Version PyPy 2.7 :
   - 12.602s
 
