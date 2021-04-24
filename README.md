@@ -18,7 +18,7 @@ Le fichier dico_fr.txt est un fichier reformaté de : http://www.pallier.org/lis
 
 Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/english-words
 
-**Version CPython** : Interprété avec Python 2.7.17, 3.6.9 et 3.8.5. Testé avec PyPy 2.7 et PyPy 3.6
+**Version CPython** : Interprété avec Python 2.7.17, 3.6.9 et 3.8.5. Testé avec PyPy 2.7 et PyPy 3.6. Testé avec le compilateur pour Python Nuitka
 
 **Version Rust** : Compilé avec Rust 1.40.
 
@@ -48,6 +48,10 @@ Les tests sont classés du plus lent au plus rapide.
 ### Version CPython 3.6 :
   - 18.504s
   - 15.802s (gc.disable)
+
+### Nuitka 0.6.14.4 :
+  - 18.282s
+  - 14.759s (gc.disable)
 
 ### Version Node JS 12.16.1 :
   - 17.729s (node)
