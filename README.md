@@ -60,8 +60,11 @@ Les tests sont classés du plus lent au plus rapide.
     - 16.889s
     - 13.237s (gc.disable)
 
-### Version Deno 1.0 et 1.8.3 :
-  - 11.035s (deno run --unstable --allow-read)
+### Version Deno :
+  - v1.0 :
+    - 11.035s (deno run --unstable --allow-read)
+  - v1.8.3 :
+    - 10.643s (deno run --allow-read)
 
 ### Version PyPy :
   - v2.7 :
