@@ -41,9 +41,15 @@ Les tests sont classés du plus lent au plus rapide.
   - 50.187s de temps d'exécution
   - 45.365s (gc.disable)
 
-### Version PHP 7.2.4 :
-  - 26.722s (php-cli)
-  - 10.246s (gc_disable)
+### Version PHP :
+  - v7.2.4 :
+    - 26.722s (php-cli)
+    - 10.246s (gc_disable)
+  - v7.4.3 :
+    - 10.053s (php-cli)
+    - 8.869s (gc_disable)
+  - v8.0.3 :
+    - 8.109s (php-cgi) nécessite : ini_set('memory_limit','1024M'); **fatal error avec 512Mo**
 
 ### Nuitka 0.6.14.4 / CPython 3.8.5 :
   - 18.282s
