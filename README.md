@@ -75,8 +75,8 @@ Les tests sont classés du plus lent au plus rapide.
   - v7.4.3 :
     - 10.053s (php-cli)
     - 8.869s (gc_disable)
-  - v8.0.3 (nécessite plus de 512Mo : ini_set('memory_limit','1024M');) :
-    - 9.670s (php-cgi)
+  - v8.0.3 :
+    - 9.670s (php-cli)
     - 8.109s (gc_disable)
 
 ### Version C++ :
