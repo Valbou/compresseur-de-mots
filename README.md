@@ -53,29 +53,35 @@ Les tests sont classés du plus lent au plus rapide.
   - 17.729s (node)
 
 ### Version CPython 3 :
-  - 18.504s v3.6.9
-  - 15.802s (gc.disable) v3.6.9
-
-  - 16.889s v3.8.5
-  - 13.237s (gc.disable) v3.8.5
+  - v3.6.9
+    - 18.504s
+    - 15.802s (gc.disable)
+  - v3.8.5 :
+    - 16.889s
+    - 13.237s (gc.disable)
 
 ### Version Deno 1.0 et 1.8.3 :
   - 11.035s (deno run --unstable --allow-read)
 
-### Version PyPy 3.6 :
-  - 12.602s v2.7
-  - 10.411s v3.6
+### Version PyPy :
+  - v2.7 :
+    - 12.602s
+  - v3.6
+    - 10.411s
 
 ### Version C++ :
-  - 8.903s (g++ -o) g++ v8.2
-  - 7.742s (g++ -o) g++ v9.3.0
+  - g++ v8.2 :
+    - 8.903s (g++ -o)
+  - g++ v9.3 :
+    - 7.742s (g++ -o)
 
-### Version Rust 1.40 : 
-  - 10.836s (cargo run) v1.40
-  - 7.881s (cargo build --release) v1.40
-
-  - 9.568s (cargo run) v1.46
-  - 6.440s (cargo build --release) v1.46
+### Version Rust :
+  - v1.40 :
+    - 10.836s (cargo run)
+    - 7.881s (cargo build --release)
+  - v1.46 :
+    - 9.568s (cargo run)
+    - 6.440s (cargo build --release)
 
 Je vous laisse juger des performances. Il est important de noter toutefois que ces tests ne sont pas représentatifs de cas d'usage courants.
 
