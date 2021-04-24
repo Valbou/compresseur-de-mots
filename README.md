@@ -45,7 +45,7 @@ Les tests sont classés du plus lent au plus rapide.
   - 26.722s (php-cli)
   - 10.246s (gc_disable)
 
-### Version CPython 3.6 :
+### Version CPython 3.6.9 :
   - 18.504s
   - 15.802s (gc.disable)
 
@@ -56,7 +56,7 @@ Les tests sont classés du plus lent au plus rapide.
 ### Version Node JS 12.16.1 :
   - 17.729s (node)
 
-### Version CPython 3.8 :
+### Version CPython 3.8.5 :
   - 16.889s
   - 13.237s (gc.disable)
 
