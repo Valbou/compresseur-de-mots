@@ -53,7 +53,7 @@ Les tests sont classés du plus lent au plus rapide.
   - 17.729s (node)
 
 ### Version CPython 3.8 :
-  - 16.998s
+  - 16.889s
   - 13.237s (gc.disable)
 
 ### Version PyPy 2.7 :
