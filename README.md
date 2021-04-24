@@ -76,6 +76,10 @@ Les tests sont classés du plus lent au plus rapide.
   - 10.836s (cargo run)
   - 7.881s (cargo build --release)
 
+### Version Rust 1.46 : 
+  - 9.568s (cargo run)
+  - 6.440s (cargo build --release)
+
 Je vous laisse juger des performances. Il est important de noter toutefois que ces tests ne sont pas représentatifs de cas d'usage courants.
 
 **Attention, la désactivation du GC, peut entrainer des fuites de mémoire**
