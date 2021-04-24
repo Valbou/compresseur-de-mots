@@ -26,7 +26,7 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 
 **Version C++** : Compilé avec G++ 7.5.0
 
-**Version JS** : Interprété avec Node 12.16.1 et Deno 1.0
+**Version JS** : Interprété avec Node 12.16.1 ainsi que Deno 1.0 et 1.8.3
 
 ## Benchmark PHP vs Python2 vs PyPy vs Python3 vs Node JS vs Deno vs C++ vs Rust :
 Les versions autre que Python n'ont été crée que dans le but d'évaluer grossièrement la différence de performances entre les langages.
@@ -63,7 +63,7 @@ Les tests sont classés du plus lent au plus rapide.
 ### Version PyPy 2.7 :
   - 12.602s
 
-### Version Deno 1.0 :
+### Version Deno 1.0 et 1.8.3 :
   - 11.035s (deno run --unstable --allow-read)
 
 ### Version PyPy 3.6 :
