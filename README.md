@@ -49,7 +49,7 @@ Les tests sont classés du plus lent au plus rapide.
   - 18.504s
   - 15.802s (gc.disable)
 
-### Nuitka 0.6.14.4 :
+### Nuitka 0.6.14.4 / CPython 3.8.5 :
   - 18.282s
   - 14.759s (gc.disable)
 
