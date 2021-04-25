@@ -20,7 +20,7 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 
 **Version CPython** : Interprété avec Python 2.7.17, 3.6.9 et 3.8.5. Testé avec PyPy 2.7 et PyPy 3.6. Testé avec le compilateur pour Python Nuitka
 
-**Version Rust** : Compilé avec Rust (Cargo 1.40 et 1.46).
+**Version Rust** : Compilé avec Rust (Rustc 1.40 et 1.46).
 
 **Version PHP** : Interprété avec PHP 7.2.4, 7.4.3 et 8.0.3, 
 
