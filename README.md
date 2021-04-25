@@ -20,11 +20,11 @@ Le fichier dico_en.txt est un fichier reformaté de : https://github.com/dwyl/en
 
 **Version CPython** : Interprété avec Python 2.7.17, 3.6.9 et 3.8.5. Testé avec PyPy 2.7 et PyPy 3.6. Testé avec le compilateur pour Python Nuitka
 
-**Version Rust** : Compilé avec Rust 1.40.
+**Version Rust** : Compilé avec Rust (Cargo 1.40 et 1.46).
 
-**Version PHP** : Interprété avec PHP 7.2.24
+**Version PHP** : Interprété avec PHP 7.2.4, 7.4.3 et 8.0.3, 
 
-**Version C++** : Compilé avec G++ 7.5.0
+**Version C++** : Compilé avec G++ 7.5.0 et 9.3.0
 
 **Version JS** : Interprété avec Node 12.16.1 ainsi que Deno 1.0 et 1.8.3
 
@@ -80,9 +80,9 @@ Les tests sont classés du plus lent au plus rapide.
     - 8.109s (gc_disable)
 
 ### Version C++ :
-  - g++ v8.2 :
+  - g++ v7.5.0 :
     - 8.903s (g++ -o)
-  - g++ v9.3 :
+  - g++ v9.3.0 :
     - 7.742s (g++ -o)
 
 ### Version Rust :
